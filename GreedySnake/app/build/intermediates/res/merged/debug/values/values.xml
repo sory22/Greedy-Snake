@@ -311,9 +311,22 @@
     <eat-comment/>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
+    <!-- From: file:/Users/sorayyaniazi/Desktop/Greedy-Snake/GreedySnake/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="menu_activity_exit_game">Exit Game</string>
+    <string name="menu_activity_help">Help</string>
+    <string name="menu_activity_play_game">Play Game</string>
+    <string name="menu_activity_setting">Setting</string>
+    <string name="menu_activity_view_score">View Score</string>
     <!-- From: file:/Users/sorayyaniazi/Desktop/Greedy-Snake/GreedySnake/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <!-- From: file:/Users/sorayyaniazi/Desktop/Greedy-Snake/GreedySnake/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="welcome_activity_enter">Enter</string>
+    <string name="welcome_activity_username">Username: </string>
+    <!-- From: file:/Users/sorayyaniazi/Desktop/Greedy-Snake/GreedySnake/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
