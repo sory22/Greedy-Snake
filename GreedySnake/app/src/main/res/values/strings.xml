@@ -11,4 +11,9 @@
     <string name="menu_activity_play_game">Play Game</string>
     <string name="menu_activity_exit_game">Exit Game</string>
 
+    <string name="gameover_activity_exit">Exit</string>
+    <string name="gameover_activity_menu">Menu</string>
+    <string name="gameover_activity_play_again">Play Again</string>
+    <string name="gameover_activity_game_over">Game Over</string>
+
 </resources>
