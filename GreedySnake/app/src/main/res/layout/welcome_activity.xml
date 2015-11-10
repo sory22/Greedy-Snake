@@ -48,7 +48,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/welcome_activity_enter"
                 android:id="@+id/enterBtn"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:onClick="enterClicked"/>
 
 
         </LinearLayout>
