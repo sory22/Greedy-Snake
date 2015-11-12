@@ -1,6 +1,5 @@
 package com.example.sorayyaniazi.greedysnake;
-
-/**
+/*
  * Created by tiantianxie on 11/11/15.
  */
 
@@ -12,6 +11,5 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 public class TextAdapter extends BaseAdapter  {
-
 
 }
