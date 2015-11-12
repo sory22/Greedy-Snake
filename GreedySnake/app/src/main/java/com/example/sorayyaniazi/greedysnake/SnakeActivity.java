@@ -1,40 +1,24 @@
 package com.example.sorayyaniazi.greedysnake;
 
+//import snake.AndroiGameController;
+//import snake.Utilities;
+//import snake.controller.IInputcontroller;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.View.OnKeyListener;
+import android.view.View.OnTouchListener;
+import android.widget.Button;
+import android.widget.GridView;
+import android.widget.TextView;
+import android.widget.Toast;
 
-/**
- * Created by sorayyaniazi on 11/10/15.
- */
+public class SnakeActivity extends Activity  {
 
-
-public class SnakeActivity extends Activity {
-
-// component Reference Variabes.
-
-
-
-//class variable.
-
-
-    @Override
-    protected void onCreate (Bundle savedState){
-
-        super.onCreate(savedState);
-
-//sets the view for class to specify xml file.(Resources.Layout.WelcomeActivity)
-        setContentView(R.layout.snake_activity);
-
-        //Assign component Reference variable.
-        //Example: textBox= (TextView)findViewById(R.id.usernameTxt);
-
-    }
-//Action functions go here, click button,etc.
-   /* public void enterClicked(View view){
-
-        //get username from textBox object
-        username= textBox.getText().toString();
-        System.out.println(username);
-    }
-*/
 }
