@@ -81,7 +81,7 @@ public class MenuActivity extends Activity {
         try{
 
             Class<?> myclass= Class.forName("com.example.sorayyaniazi.greedysnake.SnakeActivity");
-            Intent myintent= new Intent(this, myclass);
+            Intent myintent= new Intent(view.getContext(), SnakeActivity.class);
             startActivity(myintent);
         }
         catch(Exception e){

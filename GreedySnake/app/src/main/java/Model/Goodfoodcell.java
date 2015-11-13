@@ -1,23 +1,19 @@
 package Model;
 
 /**
- * Created by tiantianxie on 11/11/15.
+ * Created by tiantianxie on 11/12/15.
  */
+public class Goodfoodcell extends CellObject {
 
-public class FoodCell extends CellObject{
+    private  int pointValue = 50;
+    private  int growthValue = 3;
+    private int timeLeft = 50;
+    public Goodfoodcell(int pointValue, int growthValue, int timeLeft, int x, int y) {
+        super(x,y);
 
-    private  int pointValue;
-    private  int growthValue;
-    private int timeLeft;
 
-    public FoodCell(int pointValue, int growthValue, int timeLeft, int x,
-                          int y) {
-        super(x, y);
-        this.pointValue = pointValue;
-        this.growthValue = growthValue;
-        this.timeLeft = timeLeft;
     }
-    public void reduceTimeLeft(){
+    public void reduceTimeLeft() {
         if (timeLeft > 0) {
             timeLeft--;
         }
@@ -28,18 +24,16 @@ public class FoodCell extends CellObject{
      *
      * @return true if timeLeft is bigger than 0 or equal to -1
      */
-
-        public boolean isTimeLeft() {
-            return timeLeft > 0 || timeLeft == -1;
-        }
-
+    public boolean isTimeLeft() {
+        return timeLeft > 0 || timeLeft == -1;
+    }
 
     /**
      * returns value of the bonus (for the players score).
      *
      * @return value of the bonus (for the players score)
      */
-    public int getPointValue(){
+    public int getPointValue() {
         return pointValue;
     }
 
@@ -48,9 +42,10 @@ public class FoodCell extends CellObject{
      *
      * @return amount by which the snake will grow if bonus is consumed
      */
-    public int getGrowthValue(){
+    public int getGrowthValue() {
         return growthValue;
     }
+
     /**
      * sets time left to zero so this bonus can be deleted in the next turn
      */
