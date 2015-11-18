@@ -75,7 +75,6 @@
                 android:onClick="clickExitGame"
                 android:id="@+id/exitGameBtn"
                 android:layout_gravity="left"
-
                 android:layout_weight="0.04" />
         </LinearLayout>
 

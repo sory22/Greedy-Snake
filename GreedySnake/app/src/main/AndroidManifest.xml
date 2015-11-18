@@ -95,6 +95,34 @@
         </activity>
 
 
+        <activity
+            android:label= "@string/app_name"
+            android:name="com.example.sorayyaniazi.greedysnake.ColorActivity">
+
+            <intent-filter>
+
+                <action android:name="com.example.sorayyaniazi.greedysnake.ColorActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:label= "@string/app_name"
+            android:name="com.example.sorayyaniazi.greedysnake.DifficultyModeActivity">
+
+            <intent-filter>
+
+                <action android:name="com.example.sorayyaniazi.greedysnake.DifficultyModeActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+
+        </activity>
 
 
     </application>

@@ -50,7 +50,7 @@ public class GameField {
         Random r= new Random();
         int x = r.nextInt(width);
         int y = r.nextInt(height);
-        food = new FoodCell(, timeLeft,x,y);
+        //food = new FoodCell(, timeLeft,x,y);
         if(isIsWalkable(x,y)&& (getFoodposition(x,y)==null)){
             food.add(new FoodCell(scorevalue, timeLeft, x, y));
 
