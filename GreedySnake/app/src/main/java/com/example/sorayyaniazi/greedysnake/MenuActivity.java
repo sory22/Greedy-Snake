@@ -23,6 +23,11 @@ public class MenuActivity extends Activity {
     protected void onCreate (Bundle savedState){
 
         super.onCreate(savedState);
+        Bundle extras = getIntent().getExtras();
+        if (extras!= null){
+            username= extras.getString("username");
+        }
+        System.out.println(username);
 
 //sets the view for class to specify xml file.(Resources.Layout.WelcomeActivity)
         setContentView(R.layout.menu_activity);

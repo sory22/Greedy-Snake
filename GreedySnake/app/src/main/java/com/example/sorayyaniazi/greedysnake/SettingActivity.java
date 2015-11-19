@@ -16,7 +16,7 @@ public class SettingActivity extends Activity {
 
 
 //class variable.
-
+private  DifficultyLevel difficultyLevel;
 
     @Override
     protected void onCreate (Bundle savedState){
@@ -25,11 +25,29 @@ public class SettingActivity extends Activity {
 
 //sets the view for class to specify xml file.(Resources.Layout.WelcomeActivity)
         setContentView(R.layout.setting_activity);
-
+        difficultyLevel = DifficultyLevel.LOW;
         //Assign component Reference variable.
         //Example: textBox= (TextView)findViewById(R.id.usernameTxt);
+        Bundle extras = getIntent().getExtras();
+        if (extras!= null){
+            difficultyLevel= (DifficultyLevel)extras.get("DL");
+        }
+
+        switch(difficultyLevel) {
+            case LOW:
+                System.out.println("Low");
+                break;
+            case MEDIUM:
+                System.out.println("Medium");
+                break;
+            case HIGH:
+                System.out.println("High");
+                break;
+        }
 
     }
+
+
 //Action functions go here, click button,etc.
    /* public void enterClicked(View view){
 

@@ -1,7 +1,9 @@
 package com.example.sorayyaniazi.greedysnake;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 /**
  * Created by sorayyaniazi on 11/12/15.
@@ -16,7 +18,7 @@ public class DifficultyModeActivity extends Activity {
 
 
 //class variable.
-
+  private  DifficultyLevel difficultyLevel;
 
     @Override
     protected void onCreate (Bundle savedState){
@@ -27,9 +29,51 @@ public class DifficultyModeActivity extends Activity {
         setContentView(R.layout.difficulty_mode_activity);
 
         //Assign component Reference variable.
+
+        difficultyLevel= DifficultyLevel.LOW;
+
+
+
         //Example: textBox= (TextView)findViewById(R.id.usernameTxt);
 
     }
+
+
+    public void clickLow(View view){
+        difficultyLevel= DifficultyLevel.LOW;
+        goBackToSetting();
+
+    }
+
+
+    public void clickMedium(View view){
+        difficultyLevel= DifficultyLevel.MEDIUM;
+        goBackToSetting();
+
+    }
+
+
+    public void clickHigh(View view){
+        difficultyLevel= DifficultyLevel.HIGH;
+        goBackToSetting();
+    }
+
+   public void goBackToSetting(){
+       try{
+
+           Class<?> myclass= Class.forName("com.example.sorayyaniazi.greedysnake.SettingActivity");
+           Intent myintent= new Intent(this, myclass);
+           myintent.putExtra("DL", difficultyLevel);
+           startActivity(myintent);
+       }
+       catch(Exception e){
+           e.printStackTrace();
+       }
+
+   }
+
+
+
 //Action functions go here, click button,etc.
    /* public void enterClicked(View view){
 

@@ -27,11 +27,15 @@ public class WelcomeActivity extends Activity {
 
         //get username from textBox object
         username= textBox.getText().toString();
+        if (username.equals("")) {
+            return;
+        }
 
         try{
 
             Class<?> myclass= Class.forName("com.example.sorayyaniazi.greedysnake.MenuActivity");
             Intent myintent= new Intent(this, myclass);
+            myintent.putExtra("username", username);
             startActivity(myintent);
         }
         catch(Exception e){
