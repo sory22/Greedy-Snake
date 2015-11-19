@@ -52,15 +52,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.sorayyaniazi.greedysnake.SnakeActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="com.example.sorayyaniazi.greedysnake.SnakeActivity" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name="com.example.sorayyaniazi.greedysnake.ViewScoreActivity"
             android:label="@string/app_name" >
             <intent-filter>
