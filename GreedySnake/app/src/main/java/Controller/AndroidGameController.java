@@ -1,5 +1,15 @@
 package Controller;
 
+<<<<<<< HEAD
+import Controller.GameController;
+import Controller.InputController;
+import View.IGui;
+import android.os.Handler;
+import snake.Utilities;
+
+public class AndroidGameController extends GameController {
+
+=======
 /**
  * Created by tiantianxie on 11/11/15.
  */
@@ -7,6 +17,7 @@ import View.IGui;
 import android.os.Handler;
 import snake.Utilities;
 public class AndroidGameController extends GameController {
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
     private final Handler handler;
 
     public AndroidGameController(IGui gui, InputController input,
@@ -16,6 +27,17 @@ public class AndroidGameController extends GameController {
     }
 
     int nextMove = -1;
+<<<<<<< HEAD
+
+    /**
+     * sets the next move.
+     * <p>
+     * Only to be used if it is not possible to implement Inputcontroller.
+     *
+     * @param i
+     */
+=======
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
     public void setNextMove(int i) {
         nextMove = i;
     }
@@ -27,7 +49,11 @@ public class AndroidGameController extends GameController {
             public void run() {
                 handler.sendEmptyMessage(3);
                 while (isPlaying()) {
+<<<<<<< HEAD
+
+=======
                     long executingTime = System.currentTimeMillis();
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
                     try {
                         playOnce();
                         handler.sendEmptyMessage(1);
@@ -35,8 +61,12 @@ public class AndroidGameController extends GameController {
                         // guihandler.sendEmptyMessage(2);
                     }
                     try {
+<<<<<<< HEAD
+                        Thread.sleep(Utilities.getInstance().getSpeed());
+=======
                         Thread.sleep(Utilities.getInstance().getSpeed()
                                 - (System.currentTimeMillis() - executingTime));
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
                     } catch (InterruptedException ex) {
                     }
                 }
@@ -71,9 +101,19 @@ public class AndroidGameController extends GameController {
             for (int j = 0; j < gameField.getHeight(); j++) {
                 if (!gameField.isIsWalkable(i, j)) {
                     gui.setBorder(i, j);
+<<<<<<< HEAD
+                } else if (gameField.getFoodposition(i, j) != null && gameField.getFoodposition(i, j).isGood() == true) {
+                    gui.setgoodFood(i, j);
+
+                }else if(gameField.getFoodposition(i, j) != null && gameField.getFoodposition(i, j).isGood() == false){
+                    gui.setbadFood(i,j);
+                }
+                else if (snake.isAt(i, j)) {
+=======
                 } else if (gameField.getFoodposition(i, j) != null) {
                     gui.setFood(i, j);
                 } else if (snake.isAt(i, j)) {
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
                     gui.setSnake(i, j);
                 } else {
                     gui.setEmpty(i, j);

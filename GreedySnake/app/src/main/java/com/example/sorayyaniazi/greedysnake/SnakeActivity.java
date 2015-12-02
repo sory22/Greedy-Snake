@@ -4,6 +4,7 @@ import Controller.AndroidGameController;
 import Controller.InputController;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -18,6 +19,24 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 import snake.Utilities;
+<<<<<<< HEAD
+import android.view.Gravity;
+
+
+
+public class SnakeActivity extends Activity implements InputController  {
+    AndroidGameController c;
+    TextAdapter textAdapter;
+    int lastInput = -1;
+    GridView gridview;
+    TextView scoreView;
+    Utilities util;
+
+    public enum color {
+        RED,GREEN,YELLOW,BLUE
+    }
+
+=======
 
 public class SnakeActivity extends Activity implements InputController  {
     AndroidGameController c;
@@ -26,6 +45,7 @@ public class SnakeActivity extends Activity implements InputController  {
     GridView gridview;
     TextView scoreView;
 
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
     private void setInput(int input) {
         lastInput = input;
     }
@@ -33,7 +53,12 @@ public class SnakeActivity extends Activity implements InputController  {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
+        setContentView(R.layout.snake_activity);
+
+=======
         setContentView(R.layout.main);
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
 
         textAdapter = new TextAdapter(this);
         // handler for updating gui
@@ -45,11 +70,18 @@ public class SnakeActivity extends Activity implements InputController  {
                     textAdapter.notifyDataSetChanged();
                     scoreView.setText("Score: " + c.getScore());
                 } else if (msg.what == 2) {
+<<<<<<< HEAD
+                    Toast toast = Toast.makeText(gridview.getContext(), "Boo! Game is Over",
+                            Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER_VERTICAL|Gravity.CENTER_HORIZONTAL, 0, 0);
+                    toast.show();
+=======
                     Toast.makeText(gridview.getContext(), "Game Over",
                             Toast.LENGTH_LONG).show();
                 } else if (msg.what == 3) {
                     Toast.makeText(gridview.getContext(), "Start Game",
                             Toast.LENGTH_LONG).show();
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
                 }
             }
         };
@@ -62,15 +94,26 @@ public class SnakeActivity extends Activity implements InputController  {
     }
 
     private void initButtonsLabels() {
+<<<<<<< HEAD
+        scoreView = (TextView) findViewById(R.id.Score);
+
+        Button returnButton = (Button) findViewById(R.id.Exit);
+=======
         scoreView = (TextView) findViewById(R.id.Score1);
 
         Button returnButton = (Button) findViewById(R.id.Return);
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
         returnButton.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 c.stopPlaying();
+<<<<<<< HEAD
+                android.os.Process.killProcess(android.os.Process.myPid());
+                //startActivity(new Intent(v.getContext(), MenuActivity.class));
+=======
                 startActivity(new Intent(v.getContext(), MenuActivity.class));
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
             }
         });
 
@@ -96,6 +139,18 @@ public class SnakeActivity extends Activity implements InputController  {
         gridview = (GridView) findViewById(R.id.GridView1);
         gridview.setAdapter(textAdapter);
         gridview.setNumColumns(Utilities.getInstance().getWidth());
+<<<<<<< HEAD
+        if( util.getInstance().getColor() == 0 ) {
+            gridview.setBackgroundColor(Color.RED);
+        } else if( util.getInstance().getColor() == 1 ) {
+            gridview.setBackgroundColor(Color.GREEN);
+        } else if(util.getInstance().getColor() == 2){
+            gridview.setBackgroundColor(Color.YELLOW);
+        } else if(util.getInstance().getColor() == 3){
+            gridview.setBackgroundColor(Color.BLUE);
+        }
+=======
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
 
         // input reader (left, right, up, down buttons)
         gridview.setOnKeyListener(new OnKeyListener() {

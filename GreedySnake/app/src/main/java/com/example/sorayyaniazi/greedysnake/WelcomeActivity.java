@@ -6,12 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import snake.Utilities;
+
 /**
  * Created by sorayyaniazi on 11/6/15.
  */
 public class WelcomeActivity extends Activity {
     private String username;
     private TextView textBox;
+    Utilities util;
 
     @Override
     protected void onCreate (Bundle savedState){
@@ -27,6 +30,7 @@ public class WelcomeActivity extends Activity {
 
         //get username from textBox object
         username= textBox.getText().toString();
+        util.getInstance().setPlayerName(username);
 
         try{
 

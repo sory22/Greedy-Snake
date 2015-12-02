@@ -284,6 +284,12 @@
     <!-- From: file:/Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <!-- From: file:/Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="RestartButton">Restart</string>
+    <string name="ReturnButton">Return</string>
+    <!-- From: file:/Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -313,6 +319,13 @@
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
     <!-- From: file:/Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="color_activity_blue">Blue</string>
+    <string name="color_activity_green">Green</string>
+    <string name="color_activity_red">Red</string>
+    <string name="color_activity_yellow">Yellow</string>
+    <string name="difficulty_mode_activity_high">High</string>
+    <string name="difficulty_mode_activity_low">Low</string>
+    <string name="difficulty_mode_activity_medium">Medium</string>
     <string name="gameover_activity_exit">Exit</string>
     <string name="gameover_activity_game_over">Game Over</string>
     <string name="gameover_activity_menu">Menu</string>
@@ -322,11 +335,16 @@
     <string name="menu_activity_play_game">Play Game</string>
     <string name="menu_activity_setting">Setting</string>
     <string name="menu_activity_view_score">View Score</string>
+    <string name="setting_activity_color">Color </string>
+    <string name="setting_activity_difficulty_mode">Difficulty Mode</string>
+    <string name="setting_activity_volume">Volume </string>
     <!-- From: file:/Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
     <!-- From: file:/Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="volume_activity_off">Sound Off</string>
+    <string name="volume_activity_on">Sound On</string>
     <string name="welcome_activity_enter">Enter</string>
     <string name="welcome_activity_username">Username: </string>
     <!-- From: file:/Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->

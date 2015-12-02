@@ -61,10 +61,37 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.sorayyaniazi.greedysnake.ViewScoreActivity"
+            android:name="com.example.sorayyaniazi.greedysnake.HighscoreActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.example.sorayyaniazi.greedysnake.ViewScoreActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sorayyaniazi.greedysnake.ColorActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sorayyaniazi.greedysnake.ColorActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sorayyaniazi.greedysnake.DifficultyModeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sorayyaniazi.greedysnake.DifficultyModeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sorayyaniazi.greedysnake.volumeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.sorayyaniazi.greedysnake.volumeActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

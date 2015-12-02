@@ -20,10 +20,18 @@
         android:layout_height="wrap_content"
         />
     <Button android:id="@+id/Return"
+<<<<<<< HEAD
+        android:text="Return"
+=======
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
          />
     <Button android:id="@+id/Restart"
+<<<<<<< HEAD
+        android:text="Restart"
+=======
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
          />

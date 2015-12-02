@@ -32,6 +32,7 @@ public class FoodCell extends CellObject{
         public boolean isTimeLeft() {
             return timeLeft > 0 || timeLeft == -1;
         }
+<<<<<<< HEAD
 
 
     /**
@@ -56,5 +57,39 @@ public class FoodCell extends CellObject{
      */
     public void setTimeLeftZero() {
         timeLeft = 0;
+    }
+
+    public boolean isGood() {
+        if(pointValue!=0){
+            return true;
+        }
+            return false;
+
+=======
+
+
+    /**
+     * returns value of the bonus (for the players score).
+     *
+     * @return value of the bonus (for the players score)
+     */
+    public int getPointValue(){
+        return pointValue;
+    }
+
+    /**
+     * returns amount by which the snake will grow if bonus is consumed.
+     *
+     * @return amount by which the snake will grow if bonus is consumed
+     */
+    public int getGrowthValue(){
+        return growthValue;
+    }
+    /**
+     * sets time left to zero so this bonus can be deleted in the next turn
+     */
+    public void setTimeLeftZero() {
+        timeLeft = 0;
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
     }
 }

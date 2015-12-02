@@ -36,6 +36,10 @@ public class GameField {
     }
     public void initFood(){
         foods = new ArrayList<FoodCell>();
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
     }
 
 
@@ -56,6 +60,29 @@ public class GameField {
     public void addfoods(int pointValue, int growthValue, int timeLeft, Snake snake){
 
 
+<<<<<<< HEAD
+
+// add foods in game field
+    public void addfoods(int pointValue, int growthValue, int timeLeft, Snake snake){
+
+
+        boolean added = false;
+        // int count =foods.sizeRandom r= new Random();
+          Random r = new Random();
+        while(!added) {
+            int x = r.nextInt(width);
+            int y = r.nextInt(height);
+
+            if (isIsWalkable(x, y) && (getFoodposition(x, y) == null)&& !snake.isAt(x,y)) {
+                // if(random.nextBoolean())
+                //{
+                foods.add(new FoodCell(pointValue, growthValue, timeLeft, x, y));
+                //}else {
+                //   foods.add(new FoodCell(0, growthValue, Integer.MAX_VALUE, x, y));
+                // }
+                added = true;
+                //count = count+1;
+=======
      //   boolean added = false;
          int count =foods.size();
         Random r= new Random();
@@ -72,8 +99,10 @@ public class GameField {
                 }
 
                 count = count+1;
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
             }
         }
+
     }
 
 
@@ -125,12 +154,47 @@ public class GameField {
     }
 
 
+
+    public boolean hasnoGoodfood(){
+        for(FoodCell f: foods){
+            if(f.isGood()==true){
+                return false;
+            }else{
+                continue;
+            }
+        }
+        return true;
+    }
+    public void setBorders() {
+        for (int i = 0; i < width; i++) {
+            gameField[i][0].setIsWalkable(false);
+            gameField[i][height - 1].setIsWalkable(false);
+        }
+
+        for (int j = 0; j < height; j++) {
+            gameField[0][j].setIsWalkable(false);
+            gameField[width - 1][j].setIsWalkable(false);
+        }
+    }
+
+
     //check if there is food in the gamefield
     public boolean hasNoFood(){
+<<<<<<< HEAD
+
+        return foods.isEmpty();
+    }
+
+
+
+
+
+=======
         System.out.print(foods.size());
         return foods.isEmpty();
     }
 
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
     public String toString() {
         StringBuffer sb = new StringBuffer();
 

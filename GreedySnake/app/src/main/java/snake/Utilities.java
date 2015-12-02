@@ -1,5 +1,11 @@
 package snake;
 
+<<<<<<< HEAD
+import android.graphics.Color;
+import android.media.MediaPlayer;
+
+=======
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -21,11 +27,32 @@ public class Utilities implements Serializable {
     private static final String fileName = "settings";
     private static Utilities instance = null;
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
 	/* SETTINGS */
 
     /** debug. */
     public static final boolean debug = false;
 
+<<<<<<< HEAD
+   // public enum SPEED {
+     //    SLOW, AVERAGE, FAST
+    //}
+
+  //  private static final int VERY_SLOW = 1000; // very slow
+   // private static final int SLOW = 1000; // slow
+    //private static final int AVERAGE = 300; // average
+    //private static final int FAST = 30; // fast
+   // private static final int VERY_FAST = 50; // really fast
+    /* number of different speeds. */
+    //public static final int SPEED_LEVEL = 5;
+
+    /** pause between game loops. */
+    private int current_speed;
+    private int DifficultyMode;
+=======
     public enum SPEED {
         VERY_SLOW, SLOW, AVERAGE, FAST, VERY_FAST
     }
@@ -40,17 +67,30 @@ public class Utilities implements Serializable {
 
     /** pause between game loops. */
     private int current_speed = AVERAGE;
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
 
     private int bonusExistTime = 30;
     private int bonusGrows = 3;
     private int bonusValue = 100;
 
+<<<<<<< HEAD
+    private String playerName;
+
+=======
     private String playerName = "TestPlayer";
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
 
     private int width = 20;
     private int height = 20;
 
     private int numberOfHighScores = 10;
+<<<<<<< HEAD
+    private int nCurrColor = 0;
+
+
+    private MediaPlayer mp;
+=======
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
 
     private Utilities() {
     }
@@ -65,6 +105,27 @@ public class Utilities implements Serializable {
         return instance;
     }
 
+<<<<<<< HEAD
+
+
+    public int getColor() { return nCurrColor; }
+    public void setColor(int c) { nCurrColor = c; }
+
+    public int getSpeed() {
+        if(DifficultyMode==0){
+            current_speed = 1000;
+        }else if(DifficultyMode == 1){
+            current_speed = 500;
+        }else {
+            current_speed = 250;
+        }
+        return current_speed;
+
+    }
+
+    public void setDifficultyMode(int difficultyMode){
+        DifficultyMode = difficultyMode;
+=======
     public void setSpeed(SPEED speed) {
         switch (speed) {
             case VERY_SLOW:
@@ -141,6 +202,7 @@ public class Utilities implements Serializable {
 
     public int getSpeed() {
         return current_speed;
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
     }
 
     /**
@@ -206,6 +268,13 @@ public class Utilities implements Serializable {
     /**
      * @return the width
      */
+<<<<<<< HEAD
+
+    public void setSound(boolean sound){
+
+    }
+=======
+>>>>>>> 3c7c2dec60874596a7de517c512e6c01009684d2
     public int getWidth() {
         return width;
     }

@@ -38,7 +38,7 @@ public class MenuActivity extends Activity {
 
         try{
 
-            Class<?> myclass= Class.forName("com.example.sorayyaniazi.greedysnake.ViewScoreActivity");
+            Class<?> myclass= Class.forName("com.example.sorayyaniazi.greedysnake.HighscoreActivity");
             Intent myintent= new Intent(this, myclass);
             startActivity(myintent);
         }
@@ -93,9 +93,11 @@ public class MenuActivity extends Activity {
 
         try{
 
-            Class<?> myclass= Class.forName("com.example.sorayyaniazi.greedysnake.WelcomeActivity");
-            Intent myintent= new Intent(this, myclass);
-            startActivity(myintent);
+            //Class<?> myclass= Class.forName("com.example.sorayyaniazi.greedysnake.WelcomeActivity");
+            //Intent myintent= new Intent(this, myclass);
+            //startActivity(myintent);
+
+            android.os.Process.killProcess(android.os.Process.myPid());
         }
         catch(Exception e){
             e.printStackTrace();

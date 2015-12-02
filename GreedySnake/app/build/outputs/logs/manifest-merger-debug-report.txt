@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:2:1-102:12
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:2:1-144:12
 	xmlns:android
 		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:2:11-69
 	package
@@ -14,7 +14,7 @@ ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/s
 		INJECTED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:5:5-100:19
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:5:5-142:19
 MERGED from [com.android.support:appcompat-v7:23.1.0] /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.0] /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.0] /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/AndroidManifest.xml:22:5-20
@@ -51,13 +51,13 @@ ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/s
 	android:name
 		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:18:27-74
 activity#com.example.sorayyaniazi.greedysnake.HelpActivity
-ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:23:9-35:24
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:23:9-35:20
 	android:label
 		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:24:13-46
 	android:name
 		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:25:13-77
 intent-filter#android.intent.category.DEFAULT+com.example.sorayyaniazi.greedysnake.HelpActivity
-ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:27:13-33:33
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:27:13-33:29
 action#com.example.sorayyaniazi.greedysnake.HelpActivity
 ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:29:17-92
 	android:name
@@ -102,7 +102,7 @@ action#com.example.sorayyaniazi.greedysnake.SnakeActivity
 ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:74:17-93
 	android:name
 		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:74:25-90
-activity#com.example.sorayyaniazi.greedysnake.ViewScoreActivity
+activity#com.example.sorayyaniazi.greedysnake.HighscoreActivity
 ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:83:9-95:20
 	android:label
 		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:84:13-46
@@ -114,6 +114,42 @@ action#com.example.sorayyaniazi.greedysnake.ViewScoreActivity
 ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:89:17-97
 	android:name
 		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:89:25-94
+activity#com.example.sorayyaniazi.greedysnake.ColorActivity
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:98:9-110:20
+	android:label
+		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:99:13-46
+	android:name
+		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:100:13-78
+intent-filter#android.intent.category.DEFAULT+com.example.sorayyaniazi.greedysnake.ColorActivity
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:102:13-108:29
+action#com.example.sorayyaniazi.greedysnake.ColorActivity
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:104:17-93
+	android:name
+		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:104:25-90
+activity#com.example.sorayyaniazi.greedysnake.DifficultyModeActivity
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:113:9-125:20
+	android:label
+		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:114:13-46
+	android:name
+		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:115:13-87
+intent-filter#android.intent.category.DEFAULT+com.example.sorayyaniazi.greedysnake.DifficultyModeActivity
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:117:13-123:29
+action#com.example.sorayyaniazi.greedysnake.DifficultyModeActivity
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:119:17-101
+	android:name
+		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:119:25-99
+activity#com.example.sorayyaniazi.greedysnake.volumeActivity
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:127:9-139:20
+	android:label
+		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:128:13-46
+	android:name
+		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:129:13-79
+intent-filter#android.intent.category.DEFAULT+com.example.sorayyaniazi.greedysnake.volumeActivity
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:131:13-137:29
+action#com.example.sorayyaniazi.greedysnake.volumeActivity
+ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:133:17-93
+	android:name
+		ADDED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml:133:25-91
 uses-sdk
 INJECTED from /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.0] /Users/tiantianxie/Desktop/GreedySnake/Greedy-Snake/GreedySnake/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:20:5-43
