@@ -16,4 +16,24 @@
     <string name="gameover_activity_play_again">Play Again</string>
     <string name="gameover_activity_game_over">Game Over</string>
 
+
+    <string name="setting_activity_volume">Volume </string>
+    <string name="setting_activity_color">Color </string>
+    <string name="setting_activity_difficulty_mode">Difficulty Mode</string>
+
+    <string name="color_activity_red">Red</string>
+    <string name="color_activity_green">Green</string>
+    <string name="color_activity_yellow">Yellow</string>
+    <string name="color_activity_blue">Blue</string>
+
+    <string name="difficulty_mode_activity_low">Low</string>
+    <string name="difficulty_mode_activity_medium">Medium</string>
+    <string name="difficulty_mode_activity_high">High</string>
+
+    <string name="volume_activity_on">Sound On</string>
+    <string name="volume_activity_off">Sound Off</string>
+
+    <string name="ReturnButton">Return</string>
+    <string name="RestartButton">Restart</string>
+
 </resources>
