@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/menu">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.04">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_activity_view_score"
+                android:onClick="clickViewScore"
+                android:id="@+id/viewScoreBtn"
+                android:layout_weight="0.04" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_activity_help"
+                android:onClick="clickHelp"
+                android:id="@+id/helpBtn"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.04" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_activity_setting"
+                android:onClick="clickSetting"
+                android:id="@+id/settingBtn"
+                android:layout_gravity="right"
+                android:layout_weight="0.04" />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_activity_play_game"
+            android:onClick="clickPlayGame"
+            android:id="@+id/playGameBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="130dp"
+            android:layout_weight="0.04" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_activity_exit_game"
+                android:onClick="clickExitGame"
+                android:id="@+id/exitGameBtn"
+                android:layout_gravity="left"
+
+                android:layout_weight="0.04" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

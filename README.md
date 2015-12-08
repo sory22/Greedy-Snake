@@ -1,3 +1,3 @@
 # Greedy-Snake
 
-[The link of demo:](https://youtu.be/BcOKsWhyHDA)
+[The link of demo](https://youtu.be/BcOKsWhyHDA)
